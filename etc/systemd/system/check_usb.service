@@ -1,0 +1,12 @@
+[Unit]
+Description=Usb Drive startup
+
+[Service]
+Type=simple
+User=root
+Group=root
+ExecStart=/usr/local/bin/check_usb
+
+[Install]
+WantedBy=basic.target
+
